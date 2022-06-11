@@ -1,0 +1,1 @@
+web: gunicorn pherocam.wsgin --log-file -
