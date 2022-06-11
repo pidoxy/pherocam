@@ -57,6 +57,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_HEADERS = ['*']
 
 ROOT_URLCONF = 'pherocam.urls'
 
@@ -156,5 +157,8 @@ REST_FRAMEWORK = {
 ),
 'DEFAULT_PERMISSION_CLASSES': (
 'rest_framework.permissions.IsAuthenticated',
-)
+),
+'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+    ]
 }

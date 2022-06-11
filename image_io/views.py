@@ -32,4 +32,5 @@ class RetrieveImageIO(generics.RetrieveUpdateDestroyAPIView):
 # class VerifyImage(APIView):
 #     def get(self, request, *args, **kwargs):
 #         sfr = SimpleFacerec()
-#         sfr.load_encoding_images(settings.)
+#         sfr.load_encoding_images(settings.MEDIA_URL+'images')
+
