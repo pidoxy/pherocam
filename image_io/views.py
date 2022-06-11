@@ -6,7 +6,7 @@ from rest_framework import generics
 from rest_framework.response import Response
 from .models import Images
 from rest_framework.exceptions import PermissionDenied
-from .simple_facerec import SimpleFacerec
+# from .simple_facerec import SimpleFacerec
 from django.conf import settings
 
 # Create your views here.
