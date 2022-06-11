@@ -9,6 +9,9 @@ from .models import Images
 # Create your views here.
 
 class ImageIO(generics.ListCreateAPIView):
+    authentication_classes = ()
+    permission_classes = ()
+
     queryset = Images.objects.all()
     serializer_class = ImageSerializer
 
