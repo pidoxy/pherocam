@@ -1,1 +1,1 @@
-web: gunicorn pherocam.wsgin --log-file -
+web: gunicorn pherocam.wsgi
