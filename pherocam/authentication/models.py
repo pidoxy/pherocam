@@ -7,7 +7,6 @@ class User(AbstractUser):
     username = models.CharField('username', null=True, max_length=255)
     email = models.EmailField("email_address", unique=True)
     is_activated = models.BooleanField('activated', default=False)
-    # objects = UserManager()
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
